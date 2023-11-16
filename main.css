@@ -1,9 +1,11 @@
 body {
   font-family: monospace;
 }
+
 ul {
-  font-family: "Times New Roman", Times, serif;
+  font-family: Helvetica;
 }
+
 li {
   list-style: circle;
 }
@@ -12,27 +14,52 @@ li {
   list-style: square;
 }
 
-#msg {
-     font-family: monospace;
+.light-theme {
+  color: #000000;
+  background: rgb(92, 162, 241);
 }
-.light-theme 
-    {
-    color: #000000;
-    background: rgb(92, 162, 241);
-    }
-:root
-{
-    --green: #00FF00;
-    --white: #ffffff;
-    --black: #000000;
+
+:root {
+  --green: #00FF00;
+  --white: #ffffff;
+  --black: #000000;
 }
-.light-theme
-{
-    --bg: var(green);
-    --fontcolor: var(--black);
+
+* {
+  color: var(--fontColor);
+  font-family: Helvetica;
 }
-.black-theme
-{
-    --: var(--black);
-    --fontcolor: var(--green);
+
+body {
+  background: var(--bg);
+}
+
+.light-theme {
+  --bg: var(green);
+  --fontColor: var(--black);
+  --btnBg: var(--black);
+  --btnFontColor: var(--white);
+}
+
+.dark-theme {
+  --bg: var(--black);
+  --fontColor: var(--green);
+  --btnBg: var(--white);
+  --btnFontColor: var(--black);
+}
+
+.btn {
+  position: absolute;
+  top: 20px;
+  left: 250px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  color: var(--btnFontColor);
+  background-color: var(--btnBg);
+}
+
+.btn:focus {
+  outline-style: none;
 }
