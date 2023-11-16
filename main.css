@@ -1,0 +1,38 @@
+body {
+  font-family: monospace;
+}
+ul {
+  font-family: "Times New Roman", Times, serif;
+}
+li {
+  list-style: circle;
+}
+
+.list {
+  list-style: square;
+}
+
+#msg {
+     font-family: monospace;
+}
+.light-theme 
+    {
+    color: #000000;
+    background: rgb(92, 162, 241);
+    }
+:root
+{
+    --green: #00FF00;
+    --white: #ffffff;
+    --black: #000000;
+}
+.light-theme
+{
+    --bg: var(green);
+    --fontcolor: var(--black);
+}
+.black-theme
+{
+    --: var(--black);
+    --fontcolor: var(--green);
+}
